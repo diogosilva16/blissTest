@@ -1,0 +1,87 @@
+$screen-md-min: 768px;
+
+@mixin md {
+  @media (min-width: #{screen-md-min}){
+    @content;
+  }
+}
+
+$grey: #E3E3E3;
+
+body{
+  background-color: $grey;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerInfo {
+  text-align: center;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.box{
+  width: 90%;
+  margin: 20px auto;
+  display: block;
+  align-items: start;
+
+  @include md{
+    width: 70%;
+    display: flex;
+  }
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  float:left;
+  width:50%;
+}
+
+.card {
+  background-color: white;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  transition: 0.3s;
+  margin: 20px auto;
+  padding: 20px;
+
+  img{
+    width: 70%;
+    height: auto;
+  }
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-columns-4{
+  grid-template-columns: repeat(2, 1fr);
+  margin:20px;
+
+  .choiceBold {
+    font-weight: bold;
+  }
+
+  @include md{
+  }
+}
