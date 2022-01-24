@@ -3,8 +3,7 @@ import React from 'react';
 function Loading(){
     return(
         <div className={""}>
-            <img src={""}/>
-            <p className={""}>Checking server status...</p>
+            <p className={""}>Loading info...</p>
         </div>
     )
 }

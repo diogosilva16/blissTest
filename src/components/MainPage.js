@@ -34,9 +34,7 @@ function MainPage(props){
             {questions.map((data, index) => {
                 console.log(data.id);
                 return(
-                <Link to={`questions/${data.id}`}>
-                    <CardBuilder key={index} cardData={data}/>
-                </Link>
+                    <CardBuilder key={index} cardData={data} id={data.id}/>
             )
                 })}
         </div>

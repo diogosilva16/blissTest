@@ -74,14 +74,61 @@ body{
   display: grid;
 }
 
-.grid-columns-4{
+.grid-columns-2{
   grid-template-columns: repeat(2, 1fr);
   margin:20px;
 
   .choiceBold {
     font-weight: bold;
   }
+}
+
+.grid-columns-4{
+  grid-template-columns: repeat(4, 1fr);
+  margin:20px;
+
+  .choiceBold {
+    font-weight: bold;
+  }
+}
+
+.info-card{
+  display: block;
+  width: 600px;
+  height: 100%;
+  padding: 60px 100px;
+  margin: 50px auto;
+  background: #ffffff;
+  box-shadow: 0 0 15px 0 #999999;
+  border-radius: 10px;
+}
+
+.back-homepage{
+  width:90%;
+  margin: 20px auto;
+  @include md {
+    width: 80%
+  }
+}
+
+.content{
+  background-color: #E3E3E3;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  margin: 20px auto;
+  padding: 20px 0;
+
+  img{
+    width: 70%;
+    height: auto;
+  }
 
   @include md{
+    width: 80%;
   }
+}
+
+.align-center {
+  text-align: center;
 }
