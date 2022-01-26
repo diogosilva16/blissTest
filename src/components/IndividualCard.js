@@ -1,29 +1,32 @@
 import React, {useEffect, useState} from 'react';
 import Portal from "../utils/Portal";
 import BuildModal from "./BuildModal";
-import CheckConnection from "../utils/CheckConnection";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import Loading from "./Loading";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ErrorHandle from "./ErrorHandle";
 
 function IndividualCard(props) {
 
-    console.log(props);
     const [question, setQuestion] = useState([]);
     const [isLoading, setLoading] = useState(true);
     const [portalOpen, setPortalOpen] = useState(false);
+    const [hasError, setError] = useState(false);
     const questionId = props.match.params.id;
-    console.log(questionId);
 
     const fetchQuestionInfo = async () => {
-        let res = await fetch(`https://private-anon-9ef6ff4cd7-blissrecruitmentapi.apiary-mock.com/questions/${questionId}`);
-        const questionsInfo = await res.json();
-        setQuestion(questionsInfo);
-        console.log(questionsInfo);
-        (!question ? setLoading(true) : setLoading(false));
+        setError(false);
+        try {
+            let res = await fetch(`https://private-anon-9ef6ff4cd7-blissrecruitmentapi.apiary-mock.com/questions/${questionId}`);
+            const questionsInfo = await res.json();
+            setQuestion(questionsInfo);
+            setLoading(false)
+        } catch (error){
+            setError(error);
+        }
+        setLoading(!question);
     }
 
-    console.log(question);
     useEffect(() => {
         fetchQuestionInfo();
     }, [])
@@ -34,7 +37,7 @@ function IndividualCard(props) {
             ...question,
             choices: question.choices.map(c => c.choice === choice.choice ? {...c, votes: c.votes + 1} : c)
         }
-        console.log(updatedQuestion);
+
         const requestOptions = {
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
@@ -43,14 +46,6 @@ function IndividualCard(props) {
         let res = await fetch(`https://private-anon-38eb41df49-blissrecruitmentapi.apiary-mock.com/questions/${questionId}`, requestOptions);
         const data = await res.json();
         setQuestion(updatedQuestion)
-    }
-
-    const share = async () => {
-        const requestOptions = {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-        }
-        let res = await fetch(`https://private-anon-38eb41df49-blissrecruitmentapi.apiary-mock.com/share?destination_email=destination_email&content_url=content_url`, requestOptions);
     }
 
     const pushHomepage = () => {
@@ -63,8 +58,9 @@ function IndividualCard(props) {
 
     return (
         <div className={portalOpen ? 'blurr-bg' : ''}>
+            {hasError && !isLoading && <ErrorHandle />}
             {isLoading && <Loading/>}
-            {!isLoading && (
+            {!isLoading && !hasError && (
                 <div className='content'>
                     <div className='back-homepage'>
                         <button className='btn-sort' onClick={pushHomepage}><ArrowBackIosIcon className='arrowStyle'/>Go back</button>
@@ -87,7 +83,6 @@ function IndividualCard(props) {
                                         </div>
                                         <div><p>{choice.votes} <span className="favText">votes</span></p></div>
                                     </div>
-
                                 })}
                             </div>
                             <div className='details'>
@@ -104,7 +99,6 @@ function IndividualCard(props) {
                 </div>
             )}
         </div>
-
     )
 }
 

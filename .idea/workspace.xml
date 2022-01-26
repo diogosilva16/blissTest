@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aec9b5f-024a-48b5-bd91-9bec1dc35911" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/BuildModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/CheckConnection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Portal.js" afterDir="false" />
+    <list default="true" id="4aec9b5f-024a-48b5-bd91-9bec1dc35911" name="Default Changelist" comment="Prob done">
+      <change afterPath="$PROJECT_DIR$/src/components/ErrorHandle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BuildModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BuildModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CardBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardBuilder.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CheckHealth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CheckHealth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Choices.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/IndividualCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IndividualCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/scss/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/scss/style.min.css" afterDir="false" />
@@ -177,7 +175,8 @@
       <workItem from="1643040780805" duration="5595000" />
       <workItem from="1643077181689" duration="8460000" />
       <workItem from="1643122824676" duration="20412000" />
-      <workItem from="1643162210434" duration="1832000" />
+      <workItem from="1643162210434" duration="6567000" />
+      <workItem from="1643210148913" duration="6096000" />
     </task>
     <task id="LOCAL-00001" summary="server health check (missing retry action)&#10;list screen done (styling to be updated)&#10;detail screen ongoing">
       <created>1642907841235</created>
@@ -193,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642995505300</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Almost 100% styled&#10;Need to prevent errors on fetch&#10;Every functional requirement has been met (to be confirmed later)">
+      <created>1643164271546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643164271546</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -232,7 +238,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="server health check (missing retry action)&#10;list screen done (styling to be updated)&#10;detail screen ongoing" />
     <MESSAGE value="fixed minor bugs&#10;added individual card info&#10;styling to be updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bugs&#10;added individual card info&#10;styling to be updated" />
+    <MESSAGE value="Almost 100% styled&#10;Need to prevent errors on fetch&#10;Every functional requirement has been met (to be confirmed later)" />
+    <MESSAGE value="Prob done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prob done" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/Loading.js">

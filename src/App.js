@@ -9,8 +9,6 @@ import Connection from "./components/Connection";
 function App() {
 
     const connection = CheckConnection();
-    console.log(connection);
-
 
     if(connection) {
         return (

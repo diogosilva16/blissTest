@@ -1,14 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Link, withRouter} from "react-router-dom";
-import Choices from "./Choices";
 
 function CardBuilder(props) {
 
     const {cardData} = props;
     const {id} = props;
-    /* const handleRedirect = () => {
-         props.history.replace(`questions/${cardData.id}`)
-     }*/
 
     const imgSrc = cardData.image_url;
 
