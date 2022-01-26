@@ -3,7 +3,7 @@ import Search from "./Search";
 import {Link, useHistory} from "react-router-dom";
 import CardBuilder from "./CardBuilder";
 
-function MainPage(props){
+function MainPage(props) {
 
     const [questions, setQuestions] = useState([]);
     const [limit, setLimit] = useState(10);
@@ -28,15 +28,17 @@ function MainPage(props){
         fetchQuestions(limit, offset, props.location.search.replace('?', '&'))
     }, [props.location.search])
 
-    return(
+    return (
         <div>
             <Search handleData={handle}/>
-            {questions.map((data, index) => {
-                console.log(data.id);
-                return(
-                    <CardBuilder key={index} cardData={data} id={data.id}/>
-            )
+            <div style={{textAlign: 'center'}}>
+                {questions.map((data, index) => {
+                    console.log(data.id);
+                    return (
+                        <CardBuilder key={index} cardData={data} id={data.id}/>
+                    )
                 })}
+            </div>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import CheckHealth from "./CheckHealth";
 
 function Home(props) {
 
-    const [isLoading, setLoading] = useState(false);
+    const [isLoading, setLoading] = useState(true);
 
     const fetchServerHealth = async () => {
         setLoading(true);
@@ -24,9 +24,11 @@ function Home(props) {
     return (
         <div>
             {isLoading && <CheckHealth/>}
-            {!isLoading && (
-                <p>teste</p>
-            )}
+            {!isLoading && <div className='serverHealth centerInfo'>
+                <p>Couldn't access server info.</p>
+                <button onClick={fetchServerHealth}>Retry Action</button>
+            </div>
+            }
         </div>
     )
 }

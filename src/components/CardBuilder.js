@@ -13,19 +13,14 @@ function CardBuilder(props) {
     const imgSrc = cardData.image_url;
 
     return (
-        <Link to={`questions/${id}`}>
+        <Link className='ref-cards' to={`questions/${id}`}>
             <div className='card'>
-                <section className='centerInfo'>
-                    <img src={imgSrc} alt={cardData.id}/>
-                    <h4>{cardData.question}</h4>
-                    {/* <p>Published at: {cardData.published_at}</p>*/}
-                    <div className='grid grid-columns-2'>
-                        {cardData.choices.map((choices, index) => {
-                            return <Choices key={index} choicesData={choices}/>
-                        })}
-                    </div>
-                </section>
-
+                <div className='card-holder'>
+                    <img className='card-img' src={imgSrc} alt={cardData.id}/>
+                </div>
+                <div className='card-title'>
+                    <h3>{cardData.question}</h3>
+                </div>
             </div>
         </Link>
     )

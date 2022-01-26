@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aec9b5f-024a-48b5-bd91-9bec1dc35911" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CheckHealth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/BuildModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Connection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/CheckConnection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Portal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CardBuilder.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardBuilder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CheckHealth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CheckHealth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/IndividualCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IndividualCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading.js" afterDir="false" />
@@ -142,6 +149,7 @@
       <recent name="C:\Users\Diogo\Desktop\bliss_test\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Diogo\Desktop\bliss_test\src\utils" />
       <recent name="C:\Users\Diogo\Desktop\bliss_test\src\style\css" />
       <recent name="C:\Users\Diogo\Desktop\bliss_test\src\style\scss" />
       <recent name="C:\Users\Diogo\Desktop\bliss_test\src\style" />
@@ -165,7 +173,11 @@
       <workItem from="1642885828916" duration="4254000" />
       <workItem from="1642903808375" duration="4696000" />
       <workItem from="1642971117361" duration="4796000" />
-      <workItem from="1642987741693" duration="7368000" />
+      <workItem from="1642987741693" duration="7635000" />
+      <workItem from="1643040780805" duration="5595000" />
+      <workItem from="1643077181689" duration="8460000" />
+      <workItem from="1643122824676" duration="20412000" />
+      <workItem from="1643162210434" duration="1832000" />
     </task>
     <task id="LOCAL-00001" summary="server health check (missing retry action)&#10;list screen done (styling to be updated)&#10;detail screen ongoing">
       <created>1642907841235</created>
@@ -174,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642907841235</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed minor bugs&#10;added individual card info&#10;styling to be updated">
+      <created>1642995505300</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642995505300</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -212,7 +231,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="server health check (missing retry action)&#10;list screen done (styling to be updated)&#10;detail screen ongoing" />
-    <option name="LAST_COMMIT_MESSAGE" value="server health check (missing retry action)&#10;list screen done (styling to be updated)&#10;detail screen ongoing" />
+    <MESSAGE value="fixed minor bugs&#10;added individual card info&#10;styling to be updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed minor bugs&#10;added individual card info&#10;styling to be updated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/Loading.js">
