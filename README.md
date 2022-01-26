@@ -29,7 +29,7 @@ Main packages used in react:
 
 ## Improvements 
 
-######ps: Analysis on what could be done in the app
+##### ps: Analysis on what could be done in the app
 
 ### CSS
 
