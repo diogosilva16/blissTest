@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+Recruitment exercise for Bliss Applications
+## Project execution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+in the terminal
+#### `npm start`
 
-## Available Scripts
+## Technologies used
 
-In the project directory, you can run:
+### `React 17.0.2`
+Main packages used in react:
 
-### `npm start`
+#### `npm i react-router-dom`
+#### `npm i sass`
+#### `npm i @mui/material @emotion/react @emotion/styled`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology needs
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### react-router-dom
 
-### `npm test`
+##### - Main usage for route differentiation inside the app and component definition based on route url
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Sass + File Watcher
 
-### `npm run build`
+##### - Compile Sass into CSS in real time
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Material UI Icons
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### - Usage of some material UI icons
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Improvements 
 
-### `npm run eject`
+######ps: Analysis on what could be done in the app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### CSS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### - In the IndividualQuestion page, after the user clicks on "Share", the div that contains the modal pulls the main div upwards
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##### - Improvements on the overall app's responsiveness. I believe I covered this issue em every screen, but there's the chance that I might've missed something
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### General
 
-## Learn More
+##### - Every functionality has been tested and it's possible outcomes. Taking in consideration that some endpoints were not working correctly, all requests and payloads were checked and they turned out to be ok. This made it hard to test inside the app (visually), since there was no feedback on what was happening sometimes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## What did I take from this
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### - Overall, this allowed me to refresh my memory on React. It has been a while since I've coded something in JS, but I think the results are positive. There will always be room for improvement and I'm sure this project (and all I've (re)learned with it) is the starting point of something great.
