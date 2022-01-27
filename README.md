@@ -2,6 +2,7 @@ Recruitment exercise for Bliss Applications
 ## Project execution
 
 in the terminal
+#### `npm install`
 #### `npm start`
 
 ## Technologies used
