@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 function BuildModal(props) {
 
@@ -12,6 +12,10 @@ function BuildModal(props) {
         setEmail(e.target.value);
 
     }
+
+    useEffect(() => {
+        isEmail(email) ? setErrorText('Valid email adress') : setErrorText('Please enter a valid email address');
+    }, [email])
 
     const share = async (email, url) => {
         const requestOptions = {
@@ -36,6 +40,10 @@ function BuildModal(props) {
         }
     }
 
+    const isEmail = (email) => {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+    }
+
     return (
         <div className='modal'>
             <div className='modal-content'>
@@ -47,9 +55,9 @@ function BuildModal(props) {
                     <div className="form">
                         <input type="email" placeholder="E-mail" name="email" value={email} onChange={updateInput}
                                required/>
-                        <button onClick={handleClick}>Share</button>
+                        <button onClick={handleClick} disabled={!isEmail(email)}>Share</button>
                     </div>
-                    {!errorText.length ? null :
+                    {!errorText.length ? <div className="error-message centerInfo">{errorText}</div> :
                         <div className="error-message centerInfo">{errorText}</div>
                     }
                 </div>

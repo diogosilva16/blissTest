@@ -17,9 +17,9 @@ function Search({handleData}) {
     }
 
     return (
-        <div className="searchBox">
+        <div className="searchBox centerInfo">
             <form onSubmit={handleSubmit}>
-                <input placeholder={"Search..."} type="text" name="searchbar" onChange={updateInput} value={query}/>
+                <input placeholder={"Search question..."} type="text" name="searchbar" onChange={updateInput} value={query}/>
                 <button type="submit">Search</button>
             </form>
         </div>

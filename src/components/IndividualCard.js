@@ -57,11 +57,11 @@ function IndividualCard(props) {
     }
 
     return (
-        <div className={portalOpen ? 'blurr-bg' : ''}>
+        <div>
             {hasError && !isLoading && <ErrorHandle />}
             {isLoading && <Loading/>}
             {!isLoading && !hasError && (
-                <div className='content'>
+                <div className={`content ${portalOpen && 'blurr-bg'}`}>
                     <div className='back-homepage'>
                         <button className='btn-sort' onClick={pushHomepage}><ArrowBackIosIcon className='arrowStyle'/>Go back</button>
                     </div>

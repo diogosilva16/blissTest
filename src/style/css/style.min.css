@@ -1,6 +1,6 @@
 body {
   background-color: #023859;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .container {
@@ -17,12 +17,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  padding-top: 50px;
 }
 
 .searchBox form {
-  width: 40%;
+  width: 50%;
 }
 
 .searchBox form input[type=text] {
@@ -33,13 +32,18 @@ body {
   height: 40px;
   border-radius: 5px;
   outline: 0;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .searchBox form input[type=text]:focus {
   border: 1px solid #3498db;
 }
 
+@media (max-width: 480px) {
+  .searchBox form input[type=text] {
+    width: 100%;
+  }
+}
 .searchBox form button {
   background: #f27649;
   border-color: #f27649;
@@ -49,10 +53,8 @@ body {
   cursor: pointer;
   margin-bottom: 25px;
   height: 40px;
-  width: 20%;
   font-size: 14px;
-  outline: 0;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .searchBox form button:hover {
@@ -66,7 +68,7 @@ body {
 .ref-cards h3 {
   text-decoration: none;
   color: #000;
-  font-family: "Roboto", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .card {
@@ -205,6 +207,12 @@ body {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+}
 .align-center {
   text-align: center;
 }
@@ -233,6 +241,7 @@ body {
 
 .details button:active {
   box-shadow: 1px 1px 7px #222;
+  transform: scale(0.92);
 }
 
 .modal {
@@ -268,6 +277,7 @@ body {
 .blurr-bg {
   filter: blur(8px);
   -webkit-filter: blur(8px);
+  overflow: hidden;
 }
 
 .modal-content {
@@ -295,7 +305,7 @@ body {
 
 .share-wrap h2 {
   text-align: center;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
   font-size: 20px;
   margin-top: 10px;
   color: #023859;
@@ -315,7 +325,7 @@ body {
   height: 40px;
   border-radius: 5px;
   outline: 0;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .form input[type=email]:focus {
@@ -336,7 +346,7 @@ body {
   font-size: 14px;
   border-radius: 20px;
   outline: 0;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .form button:hover {
@@ -346,6 +356,12 @@ body {
 
 .form button:active {
   box-shadow: 1px 1px 7px #222;
+  transform: scale(0.92);
+}
+
+.form button:disabled {
+  background: #555;
+  cursor: not-allowed;
 }
 
 .choiceBtn {
@@ -368,6 +384,7 @@ body {
 
 .choiceBtn:active {
   box-shadow: 1px 1px 7px #222;
+  transform: scale(0.92);
 }
 
 .choiceBtn .iconStyle {
@@ -376,7 +393,7 @@ body {
 
 .favText {
   font-size: 12px;
-  font-family: "Roboto Light", serif;
+  font-family: "Roboto Light", sans-serif;
 }
 
 .publishedText {
@@ -384,7 +401,7 @@ body {
 }
 
 .individualTitle {
-  font-family: "Roboto Medium", serif;
+  font-family: "Roboto Medium", sans-serif;
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -395,7 +412,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e3e3e3;
-  font-family: "Roboto Medium", serif;
+  font-family: "Roboto Medium", sans-serif;
 }
 
 .noConnection .iconSize {
@@ -416,7 +433,7 @@ body {
 }
 
 .serverHealth button {
-  font-family: "Roboto Medium", serif;
+  font-family: "Roboto Medium", sans-serif;
   background: #f29f05;
   border: none;
   width: 150px;
@@ -437,6 +454,7 @@ body {
 
 .serverHealth button:active {
   box-shadow: 1px 1px 7px #222;
+  transform: scale(0.92);
 }
 
 .spinner {

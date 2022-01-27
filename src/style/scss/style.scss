@@ -22,8 +22,8 @@ $salmon: #F27649;
 $cardColor: #E3E3E3;
 
 //FONTS
-$mainFont: 'Roboto Light', serif;
-$secondaryFont: 'Roboto Medium', serif;
+$mainFont: 'Roboto Light', sans-serif;
+$secondaryFont: 'Roboto Medium', sans-serif;
 
 body {
   background-color: $darkBlue;
@@ -44,11 +44,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  padding-top: 50px;
 
   form{
-    width: 40%;
+    width: 50%;
     input[type="text"] {
       width: 70%;
       border: 1px solid #bbb;
@@ -62,6 +61,9 @@ body {
       &:focus {
         border: 1px solid #3498db;
       }
+      @include sm{
+        width: 100%;
+      }
     }
 
     button {
@@ -73,9 +75,7 @@ body {
       cursor: pointer;
       margin-bottom: 25px;
       height: 40px;
-      width: 20%;
-      font-size: 14px;
-      outline: 0;
+      font-size: 14px;;
       font-family: $mainFont;
 
       &:hover {
@@ -92,7 +92,7 @@ body {
 .ref-cards h3 {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .card {
@@ -223,6 +223,11 @@ body {
     width: 50%;
     height: auto;
   }
+
+  @include md {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .align-center {
@@ -253,6 +258,7 @@ body {
 
     &:active {
       box-shadow: 1px 1px 7px #222;
+      transform: scale(0.92);
     }
   }
 }
@@ -291,6 +297,8 @@ body {
 .blurr-bg {
   filter: blur(8px);
   -webkit-filter: blur(8px);
+  overflow: hidden;
+
 }
 
 .modal-content {
@@ -366,6 +374,12 @@ body {
 
     &:active {
       box-shadow: 1px 1px 7px #222;
+      transform: scale(0.92);
+    }
+
+    &:disabled {
+      background: #555555;
+      cursor: not-allowed;
     }
   }
 }
@@ -389,7 +403,10 @@ body {
 
   &:active {
     box-shadow: 1px 1px 7px #222;
+    transform: scale(0.92);
   }
+
+
 
   .iconStyle{
     font-size: 20px;
@@ -398,7 +415,7 @@ body {
 
 .favText {
   font-size: 12px;
-  font-family: 'Roboto Light', serif
+  font-family: $mainFont;
 }
 
 .publishedText {
@@ -457,6 +474,7 @@ body {
 
     &:active {
       box-shadow: 1px 1px 7px #222;
+      transform: scale(0.92);
     }
   }
 }
