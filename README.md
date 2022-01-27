@@ -33,14 +33,11 @@ Main packages used in react:
 
 ### CSS
 
-##### - In the IndividualQuestion page, after the user clicks on "Share", the div that contains the modal pulls the main div upwards
-
 ##### - Improvements on the overall app's responsiveness. I believe I covered this issue em every screen, but there's the chance that I might've missed something
 
 ### General
 
-##### - Every functionality has been tested and it's possible outcomes. Taking in consideration that some endpoints were not working correctly, all requests and payloads were checked and they turned out to be ok. This made it hard to test inside the app (visually), since there was no feedback on what was happening sometimes.
-
+##### - Every functionality and it's possible outcomes have been tested. Taking in consideration that some endpoints were not working correctly, all requests and payloads were checked and they turned out to be ok. This made it hard to test inside the app (visually), since there was no feedback on what was happening sometimes (an example of this is, when choosing an answer - voting - I chose to update the value instead of following the information that I was seeing on the Response tab (Swift: 1 and the rest 0).)
 
 ## What did I take from this
 
